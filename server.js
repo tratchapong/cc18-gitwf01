@@ -4,9 +4,12 @@ const errorMiddleware = require('./middlewares/errorMiddleware')
 const notFound = require('./middlewares/notFound')
 
 const express = require('express')
+const userRoute = require('./routes/user-route')
 const app = express()
 
 app.use(cors())
+
+app.use('/user', userRoute)
 
 app.use(notFound)
 app.use(errorMiddleware)
