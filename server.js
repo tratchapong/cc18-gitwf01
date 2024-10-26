@@ -16,5 +16,5 @@ app.use('/auth', authRoute)
 app.use(notFound)
 app.use(errorMiddleware)
 
-const port = process.env.PORT || 8888
+const port = process.env.PORT || 8000
 app.listen(port, ()=> console.log('Server on',port) )
