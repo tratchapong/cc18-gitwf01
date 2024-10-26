@@ -9,5 +9,5 @@ const app = express()
 app.use(notFound)
 app.use(errorMiddleware)
 
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8888
 app.listen(port, ()=> console.log('Server on',port) )
